@@ -8,7 +8,7 @@ const counterSlice = createSlice({
 	name: 'counter',
 	initialState,
 	reducers: {
-		increment: (state, actions) => {
+		increment: (state, actions = 1) => {
 			state.value = state.value + actions.payload;
 		},
 

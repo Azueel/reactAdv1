@@ -11,10 +11,10 @@ function App() {
 
 			<h1>{counter}</h1>
 
-			<button onClick={() => dispatch(increment(1))}>+1</button>
-
+			<button onClick={() => dispatch(increment())}>+1</button>
 			<button onClick={() => dispatch(reset())}>Reset</button>
-			<button onClick={() => dispatch(decrement(2))}>-1</button>
+
+			<button onClick={() => dispatch(reset())}>-1</button>
 		</>
 	);
 }
